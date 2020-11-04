@@ -1,0 +1,77 @@
+.main-brand{
+    font-size: 60px;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Great Vibes', cursive;
+   margin: 60px 0;
+}
+
+.story-img{
+    width: 100%;
+
+}
+.story-title{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 30x;
+    margin: 15px 0;
+    text-align: center;
+}
+.story-text{
+    line-height:1.5 ;
+}
+.row{
+    display: flex;
+    align-items: stretch;
+
+}
+
+.story {
+    border:1px solid #3333 ;
+    padding:5px ;
+
+}
+.quarter{
+   flex: 1;
+   
+
+}
+.half{
+  flex: 2;
+    
+}
+.three-quaters{
+   flex: 3;
+}
+.nav-list{
+    display: flex;
+   flex-direction: column;
+   margin: 0;
+   padding: 0;
+
+}
+.nav-items{
+    width: 580%;
+    flex: 1;
+    display:flex;
+    align-items: center;
+    padding-left: 25px;
+    font-size: 30px;
+    color: #555555;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.nav-items a{
+    text-decoration: none;
+    color: #555555;
+}
+.nav-items a:hover{
+    text-decoration: underline;
+}
+.nav-items:nth-child(1){ background-color: #ffeaa7;}
+.nav-items:nth-child(2){ background-color: #a7ffa7;}
+.nav-items:nth-child(3){ background-color: #a7c3ff;}
+.nav-items:nth-child(4){ background-color: #ffa7ff;}
+.nav-items:nth-child(5){ background-color: #ffa7bd;}
+
