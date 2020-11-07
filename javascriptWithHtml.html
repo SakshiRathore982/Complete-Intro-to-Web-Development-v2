@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- <input placeholder="type in the box" class="input-to-copy"/>
+    <p class="p-to-copy-to">nothing has being written</p>
+    <script>
+        const input=document.querySelector(`.input-to-copy`);
+        const para=document.querySelector('.p-to-copy-to');
+        input.addEventListener("keyup",function(){
+            para.innerText=input.value;
+        });
+    </script> -->
+    <style>
+        .color-box{
+            background-color:blue ;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+    <div class="color-box"></div>
+    <input  class="color-in" placeholder="type a color here!"/>
+    <script>
+        const input=document.querySelector(`.color-in`);
+        const para =document.querySelector(`.color-box`);
+ input.addEventListener("change",function(){
+     para.style.backgroundColor=input.value;});
+
+
+    </script>
+</body>
+</html>
