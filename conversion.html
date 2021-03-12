@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeep wrangler</title>
+    <link rel="stylesheet " href="style.css">
+    <h1 class="heading">Jeep Wrangler </h1>
+    <section>
+        <article class="first">
+            <img class="jeep" id="pic" src="jeep2.jpg" width="500" height="400" />
+            <br>
+            <button class="but1" type="bu2" onclick="display()">click me</button>
+            <br>
+        </article>
+        <article class="second">
+            <button type="button" id="people" onclick="add()">want more pictures of jeep</button>
+        </article>
+    </section>
+    <h2>Feature of this model ! </h2>
+    <button class="but2" type="bu1" onclick="content()">feature</button>
+    <p class="feature" id="con"></p>
+    <p id="demo"></p>
+    <script>
+        function content() {
+            var text = "";
+            var fea = ["1.The Jeep Wrangler has 1 Petrol Engine on offer.",
+                "2.The Petrol engine is 1998 cc.",
+                "3.It is available with the Automatic transmission.",
+                "4.Depending upon the variant and fuel type the Wrangler has a mileage of 12.1 kmpl.",
+                "5.The Wrangler is a 5 seater and has length of 4882mm, width of 1894mm and a wheelbase of 3008mm. "];
+            for (var i = 0; i < 5; i++) {
+                text = text + "<li>" + fea[i];
+            }
+            document.getElementById("con").innerHTML = text;
+        }
+    </script>
+    <script>
+        function add() {
+            var picture = document.createElement("img");
+            picture.setAttribute("src", "crop.png");
+            picture.setAttribute("width", "500");
+            picture.setAttribute("height", "400");
+            document.body.appendChild(picture);
+        }
+        function display() {
+            var im = "jeep.jpg";
+
+            document.getElementById("pic").src = im.replace();
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
