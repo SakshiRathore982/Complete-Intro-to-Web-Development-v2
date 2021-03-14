@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <p>
+        <li>my name is rathore</li>
+       ( rathore is replace with deora)
+    </p>
+    <button type="button " onclick="regex()">click on this</button>
+    <p id="try"></p>
+    <p id="tryonce"></p>
+    <script>
+        function regex()
+        {
+            var str="my name is rathore";
+            var res=str.replace(/rathore/i,"Deora");
+            document.getElementById("try").innerHTML="<br>"+res+"<li>"+"vowels in this line :"+str.match(/[aeiou]/g);
+
+        }
+        function rel()
+        {               var sr = "my name is deora";
+                   var re =sr.search(/deora/i);
+                   document.getElementById("tryonce").innerHTML = "position of deora in line "+"<br>" + re;
+                
+        }
+        rel();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
